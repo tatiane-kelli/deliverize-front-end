@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   font-family: "Roboto", sans-serif;
 }
@@ -19,13 +19,15 @@
 }
 
 .container .additional__orders {
-  width: 70px;
-  height: 388px;
+  width: 480px;
+  height: 520px;
   top: 24px;
   margin: 24px 0px;
 
-  border: solid, 5px;
-  border-color: black;
+  display: column;
+  align-items: center;
+
+  border: 1px solid #4e4e4e;
   border-radius: 4px;
 }
 
@@ -33,5 +35,51 @@
   width: 375px;
   height: 55px;
 
-  background: rgba(253, 215, 14, 0.2);
+  background: #fdd70e33;
+}
+
+.container .additional__orders .extra__ingredient {
+  width: 359px;
+  height: 88px;
+  bottom: 1.12%;
+
+  background: #ffffff;
+}
+
+.container .additional__orders .extra__ingredient .extra__item {
+  color: #4e4e4e;
+  font: "Roboto" 500 normal;
+  line-height: 16px;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+}
+
+.container .additional__orders .extra__ingredient .price {
+  color: #f09035;
+  font: "Roboto" 400 normal;
+  line-height: 16px;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+}
+
+.container .additional__orders .yellow-line {
+  width: 343px;
+  height: 0px;
+  left: 8px;
+  top: 96px;
+
+  border: 1px solid #e8a634;
+}
+
+.container .additional__orders button {
+  width: 219px;
+  height: 40px;
+  border-radius: 4px;
+
+  background-color: #f09035;
+  color: #ffffff;
 }
