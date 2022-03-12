@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.container img {
+  width: 597px;
+  height: 388px;
+  top: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.container .additional__orders {
+  width: 70px;
+  height: 388px;
+  top: 24px;
+  margin: 24px 0px;
+
+  border: solid, 5px;
+  border-color: black;
+  border-radius: 4px;
+}
+
+.container .additional__orders .retangle {
+  width: 375px;
+  height: 55px;
+
+  background: rgba(253, 215, 14, 0.2);
+}
