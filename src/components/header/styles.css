@@ -15,13 +15,26 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.navigationHeader.delivery__address {
+.navigationHeader .session__logo {
+  display: flex;
+}
+
+.navigationHeader .delivery__address {
   width: 230px;
-  height: 48px;
+  height: 65px;
+  align-items: center;
+  display: flex;
 
   background: #ffffff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+
+  align-items: center;
 }
 
 .navigationHeader input {
@@ -38,14 +51,18 @@
   border-radius: 4px;
 }
 
-.navigationHeader input:enabled {
-  border: 1px solid #ed3237;
-  box-sizing: border-box;
-  border-radius: 4px;
+.navigationHeader input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 .navigationHeader ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+.navigationHeader .profile__icons {
+  color: #ed3237;
+  display: flex;
 }
