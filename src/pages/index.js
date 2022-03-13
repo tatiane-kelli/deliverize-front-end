@@ -23,8 +23,9 @@ const Product = () => {
           </p>
           <p style={{color: "#4E4E4E",
                     paddingLeft: "15px",
-                    textDecoration: "line-through"}}>
-            R$34,99
+                    textDecoration: "line-through"}}
+          >
+            R$34,95
           </p>
           </div>
           
