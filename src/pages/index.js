@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/header";
 //import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
 import "./styles.css";
+//import "./scripts.js";
+//import OpenModal from "./scripts.js";
 
 const Product = () => {
   return (
@@ -66,6 +68,22 @@ const Product = () => {
           </div>
           <div className="board__footer">
             <button>Adicionar</button>
+          </div>
+        </div>
+
+        <div className="popover" id="popover">
+          <div className="popover__title">
+            <span>Adicionado com Sucesso</span>
+          </div>
+          <div className="popover__content">
+            <h3>Oferta cheddar bacon</h3>
+            <span>Ingredientes</span>
+            <ul>
+              <li>1 Carne 250gr</li>
+              <li>2 Queijo cheddar</li>
+              <li>1 Bacon</li>
+              <li>Molho especial</li>
+            </ul>
           </div>
         </div>
       </div>

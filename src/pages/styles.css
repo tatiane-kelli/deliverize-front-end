@@ -112,7 +112,7 @@
 }
 
 .container .additional__orders .yellow-line {
-  width: 343px;
+  width: 340px;
   height: 0px;
   left: 10px;
   top: 96px;
@@ -134,4 +134,70 @@
 
   background-color: #f09035;
   color: #ffffff;
+}
+
+.popover {
+  width: 208px;
+  height: 146px;
+
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.popover .popover__title {
+  background: #f09035;
+  flex: none;
+  height: 32px;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+
+  color: #ffffff;
+}
+
+.popover .popover__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 11px;
+
+  background: #f8f8f8;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+
+  color: #4e4e4e;
+}
+
+.popover .popover__content span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
+  color: #bc2e31;
+}
+
+.popover .show {
+  display: flex;
+}
+
+.show .popover {
+  animation: popover 0.3s;
+}
+
+.fechar {
+  width: 208px;
+  height: 146px;
+
+  border-radius: 4px;
 }

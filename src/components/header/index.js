@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import ConfigIcon from "../ConfigIcon";
 import { BiUserCircle } from "react-icons/bi";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -31,12 +32,16 @@ const Header = () => {
           <input type="text" placeholder="Busque por estabelecimentos ou produtos"/>
         </div>
         <div className="profile__icons">
-          <p style={{paddingRight: "25px", marginLeft: "0px"}}>
+          <ConfigIcon>
             <BiUserCircle />
+          </ConfigIcon>
+          <p style={{paddingRight: "25px", marginLeft: "0px"}}>
             Entrar
           </p>
-          <p>
+          <ConfigIcon>
             <MdOutlineLocalGroceryStore />
+          </ConfigIcon>
+          <p>
             Carrinho
           </p>
         </div>
