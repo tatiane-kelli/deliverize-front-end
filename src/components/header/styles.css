@@ -6,9 +6,8 @@
   justify-content: space-around;
 
   position: static;
-  width: auto;
+  width: 1280;
   height: 80px;
-  left: calc(50% - 1280px / 2);
   font-family: "Roboto", sans-serif;
 
   background: #f4f4f4;
@@ -18,6 +17,14 @@
 .navigationHeader .session__logo {
   display: flex;
   align-items: center;
+  width: 320px;
+}
+
+.navigationHeader .session__address {
+  width: 320px;
+  align-items: center;
+  display: flex;
+  margin: 0px;
 }
 
 .navigationHeader .delivery__address {
@@ -25,6 +32,7 @@
   height: 65px;
   align-items: center;
   display: flex;
+  margin: 0px;
 
   background: #ffffff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -36,12 +44,14 @@
   line-height: 12px;
 
   align-items: center;
+  padding-right: 4px;
 }
 
 .navigationHeader input {
   width: 354px;
   height: 48px;
   padding: 15px;
+  margin: 10px;
 
   background: #ffffff;
   color: #656363;
@@ -58,11 +68,10 @@
 }
 
 .navigationHeader .profile__icons {
+  width: 282px;
   color: #ed3237;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 
   font-family: "Roboto";
   font-style: normal;

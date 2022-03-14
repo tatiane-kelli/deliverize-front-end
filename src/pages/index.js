@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../components/header";
 //import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
 import "./styles.css";
-//import "./scripts.js";
-//import OpenModal from "./scripts.js";
 
 const Product = () => {
   return (

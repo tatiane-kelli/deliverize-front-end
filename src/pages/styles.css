@@ -186,18 +186,3 @@
 
   color: #bc2e31;
 }
-
-.popover .show {
-  display: flex;
-}
-
-.show .popover {
-  animation: popover 0.3s;
-}
-
-.fechar {
-  width: 208px;
-  height: 146px;
-
-  border-radius: 4px;
-}

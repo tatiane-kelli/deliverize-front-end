@@ -13,19 +13,21 @@ const Header = () => {
           <img src="../../assets/deliverize-logo1.svg" alt="Deliverize"/>
           <img src="../../assets/deliverize-logo2.svg" alt="Deliverize"/>
         </div>
-        <div className="delivery__address">
-          <div>
-            <p style={{color: "#ed3237", paddingLeft: "15px"}}><b>Entrega</b></p>
-            <p style={{color: "#656363", paddingLeft: "15px"}}>R. Antônio Braune, 222</p>
-          </div>
-          <div style={{color: "#ed3237",
-                      paddingLeft: "50px",
-                      width: "20px",
-                      height:"14px"
-                      }}
-          >
-            <RiArrowDownSLine />
-          </div>     
+        <div className="session__address">
+          <div className="delivery__address">
+            <div >
+              <p style={{color: "#ed3237", paddingLeft: "15px"}}><b>Entrega</b></p>
+              <p style={{color: "#656363", paddingLeft: "15px"}}>R. Antônio Braune, 222</p>
+            </div>
+            <div style={{color: "#ed3237",
+                        paddingLeft: "50px",
+                        width: "20px",
+                        height:"14px"
+                        }}
+            >
+              <RiArrowDownSLine />
+            </div>   
+          </div> 
         </div>
         <div>
           <input type="text" placeholder="Busque por estabelecimentos ou produtos"/>
