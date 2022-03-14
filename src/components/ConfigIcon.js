@@ -5,7 +5,7 @@ export default function ConfigIcon({ children }) {
     <>
       <IconContext.Provider 
         value={{ color: "#ED3237",
-          size: "36px",
+          size: "24px",
           top:"17px",
         }}
       >

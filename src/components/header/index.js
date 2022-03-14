@@ -25,8 +25,7 @@ const Header = () => {
                       }}
           >
             <RiArrowDownSLine />
-          </div>
-          
+          </div>     
         </div>
         <div>
           <input type="text" placeholder="Busque por estabelecimentos ou produtos"/>
