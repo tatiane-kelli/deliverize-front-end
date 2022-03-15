@@ -85,6 +85,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   background: #ffffff;
 }
@@ -140,8 +141,6 @@
 }
 
 .container .additional__orders .quantity__food {
-  width: 140px;
-  height: 40px;
   display: flex;
   justify-content: space-evenly;
 

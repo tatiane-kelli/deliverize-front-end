@@ -3,24 +3,27 @@ import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
 import "./styles.css";
 
 const InputQuantity = ({
-  handleIncrementItem, 
-  handleDecrementItem,
-  extraItemQuantity
+  functionIncrement, 
+  functionDecrement,
+  extraItemQuantity,
+  foodQuantity,
+  width,
+  height
 }) => {
   return(
-    <div className="extraItem_btn">
+    <div className="quantity__food" style={{width:{width}, height:{height}}}>
       <button 
-        className="itemQuantity__btn" 
+        className="quantity__btn" 
         type="button" 
-        onClick={() => handleDecrementItem}
+        onClick={{functionDecrement}}
       >
         <AiOutlineMinus fill="#ED3237"/>
       </button>
-      <input type="number" readOnly value={extraItemQuantity} />
+      <input type="number" readOnly value={foodQuantity || extraItemQuantity} />
       <button 
-        className="itemQuantity__btn" 
+        className="quantity__btn" 
         type="button" 
-        onClick={() => handleIncrementItem}
+        onClick={{functionIncrement}}
       >
         <AiOutlinePlus fill="#ED3237"/>
       </button>

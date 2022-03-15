@@ -1,7 +1,6 @@
 import React, {useState, useCallback} from "react";
 import Header from "../components/header";
 import InputQuantity from "../components/inputQuantity";
-import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
 import ImgSandwich from "../assets/PicanhaBacon.svg";
 import "./styles.css";
 
@@ -75,6 +74,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             <InputQuantity 
               handleIncrementItem={handleIncrementItem}
               handleDecrementItem={handleDecrementItem}
+              style={{width: "89px", height: "32px"}}
             />
           </div>
           <div className="yellow-line"/>
@@ -86,6 +86,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             <InputQuantity 
               handleIncrementItem={handleIncrementItem}
               handleDecrementItem={handleDecrementItem}
+              style={{width: "89px", height: "32px"}}
             />
           </div>
           <div className="yellow-line"/>
@@ -97,6 +98,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             <InputQuantity 
               handleIncrementItem={handleIncrementItem}
               handleDecrementItem={handleDecrementItem}
+              style={{width: "89px", height: "32px"}}
             />
           </div>
           <div className="yellow-line"/>
@@ -108,6 +110,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             <InputQuantity 
               handleIncrementItem={handleIncrementItem}
               handleDecrementItem={handleDecrementItem}
+              style={{width: "89px", height: "32px"}}
             />
           </div>
           <div className="yellow-line"/>
@@ -117,23 +120,11 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             </p>
           </div>
           <div className="board__footer">
-            <div className="quantity__food">
-              <button 
-                className="quantity__btn" 
-                type="button" 
-                onClick={() => handleDecrement}
-              >
-                <AiOutlineMinus fill="#ED3237"/>
-              </button>
-              <input type="number" readOnly value={foodQuantity} />
-              <button 
-                className="quantity__btn" 
-                type="button" 
-                onClick={() => handleIncrement}
-              >
-                <AiOutlinePlus fill="#ED3237"/>
-              </button>
-            </div>
+            <InputQuantity 
+              handleIncrementItem={handleIncrement}
+              handleDecrementItem={handleDecrement}
+              style={{width: "140px", height: "40px"}}
+            />
             <div className="add__food">
               <button 
                 className="btn__addFood"
