@@ -108,6 +108,65 @@
   align-items: center;
 }
 
+.container .additional__orders .extra__ingredient .extraItem__btn {
+  width: 89px;
+  height: 32px;
+  right: 8px;
+  top: calc(50% - 32px / 2 - 1.5px);
+
+  background: #ffffff;
+
+  border: 1px solid #f09035;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.container .additional__orders .extra__ingredient .extraItem__btn input {
+  width: 31.7px;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #4e4e4e;
+}
+
+.container .additional__orders .extra__ingredient .extraItem__btn input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.container .additional__orders .extra__ingredient .itemQuantity__btn {
+  width: 31.7px;
+  height: 30px;
+
+  border-style: none;
+
+  background: #ffffff;
+  color: #ed3237;
+}
+
+.container .additional__orders .quantity__extraItem {
+  width: 89px;
+  height: 32px;
+  right: 8px;
+
+  background: #ffffff;
+
+  border: 1px solid #f09035;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
 .container .additional__orders .yellow-line {
   width: 340px;
   height: 0px;
@@ -122,8 +181,11 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 60px;
+
+  justify-content: space-evenly;
 }
-.container .additional__orders button {
+
+.container .additional__orders .btn__addFood {
   width: 219px;
   height: 40px;
   border-radius: 4px;
@@ -131,6 +193,51 @@
 
   background-color: #f09035;
   color: #ffffff;
+}
+
+.container .additional__orders .quantity__food {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: #ffffff;
+  border: 1px solid #f09035;
+  border-radius: 4px;
+}
+
+.container .additional__orders .quantity__food input {
+  width: 50px;
+  height: 38px;
+  background-color: #ffffff;
+  border: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 10px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.33px;
+  color: #4e4e4e;
+}
+
+.container .additional__orders .quantity__food input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.container .additional__orders .quantity__food .quantity__btn {
+  width: 50px;
+  height: 40px;
+
+  border-style: none;
+
+  background: #ffffff;
+  color: #ed3237;
 }
 
 .popover {
