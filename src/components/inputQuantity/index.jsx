@@ -1,6 +1,7 @@
 import React from "react";
 import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
-import "./styles.css";
+
+//estilização no arquivo styles.css da pagina
 
 const InputQuantity = ({
   functionIncrement, 
