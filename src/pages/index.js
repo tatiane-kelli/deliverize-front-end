@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 //import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
+import ImgSandwich from "../assets/PicanhaBacon.svg";
 import "./styles.css";
 
 const Product = () => {
@@ -9,7 +10,7 @@ const Product = () => {
       <Header />
       <div className="container">
         <div className="snack__info">
-          <img src="PicanhaBacon.svg" alt="Oferta Picanha Cheddar Bacon" />
+          <img src={ImgSandwich} alt="Oferta Picanha Cheddar Bacon" />
           <h3>
             Oferta Picanha Cheddar Bacon
           </h3>

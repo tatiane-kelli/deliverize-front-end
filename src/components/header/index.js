@@ -4,14 +4,16 @@ import ConfigIcon from "../ConfigIcon";
 import { BiUserCircle } from "react-icons/bi";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { RiArrowDownSLine } from "react-icons/ri";
+import ImgLogo1 from "../../assets/deliverize-logo1.svg";
+import ImgLogo2 from "../../assets/deliverize-logo2.svg";
 
 const Header = () => {
   return (
     <>
       <nav className="navigationHeader">
         <div className="session__logo">
-          <img src="../../assets/deliverize-logo1.svg" alt="Deliverize"/>
-          <img src="../../assets/deliverize-logo2.svg" alt="Deliverize"/>
+          <img src={ImgLogo1} alt="Deliverize"/>
+          <img src={ImgLogo2} alt="Deliverize"/>
         </div>
         <div className="session__address">
           <div className="delivery__address">
