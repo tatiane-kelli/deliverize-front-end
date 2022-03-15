@@ -65,7 +65,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="price">+R$4,99</p>
             </div>
             <div className="extraItem_btn">
-              <button 
+              {/* <button 
                 className="itemQuantity__btn" 
                 type="button" 
                 onClick={() => handleDecrementItem}
@@ -79,23 +79,80 @@ const Product = ({food_quantity, extraItem_quantity}) => {
                 onClick={() => handleIncrementItem}
               >
                 <AiOutlinePlus fill="#ED3237"/>
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="yellow-line"/>
           <div className="extra__ingredient">
-            <p className="extra__item">Cebola crispy</p>
-            <p className="price">+R$1,50</p>
+            <div>
+              <p className="extra__item">Cebola crispy</p>
+              <p className="price">+R$1,50</p>
+            </div>
+            <div className="extraItem_btn">
+              {/* <button 
+                className="itemQuantity__btn" 
+                type="button" 
+                onClick={() => handleDecrementItem}
+              >
+                <AiOutlineMinus fill="#ED3237"/>
+              </button>
+              <input type="number" readOnly value={extraItemQuantity} />
+              <button 
+                className="itemQuantity__btn" 
+                type="button" 
+                onClick={() => handleIncrementItem}
+              >
+                <AiOutlinePlus fill="#ED3237"/>
+              </button> */}
+            </div>
           </div>
           <div className="yellow-line"/>
           <div className="extra__ingredient">
-            <p className="extra__item">Molho cheddar</p>
-            <p className="price">+R$3,50</p>
+            <div>
+              <p className="extra__item">Molho cheddar</p>
+              <p className="price">+R$3,50</p>
+            </div>
+            <div className="extraItem_btn">
+              {/* <button 
+                className="itemQuantity__btn" 
+                type="button" 
+                onClick={() => handleDecrementItem}
+              >
+                <AiOutlineMinus fill="#ED3237"/>
+              </button>
+              <input type="number" readOnly value={extraItemQuantity} />
+              <button 
+                className="itemQuantity__btn" 
+                type="button" 
+                onClick={() => handleIncrementItem}
+              >
+                <AiOutlinePlus fill="#ED3237"/>
+              </button> */}
+            </div>
           </div>
           <div className="yellow-line"/>
           <div className="extra__ingredient">
-            <p className="extra__item">Molho de picanha</p>
-            <p className="price">+R$3,50</p>
+            <div>
+              <p className="extra__item">Molho de picanha</p>
+              <p className="price">+R$3,50</p>
+            </div>
+            <div className="extraItem_btn">
+              {/* <button 
+                className="itemQuantity__btn" 
+                type="button" 
+                onClick={() => handleDecrementItem}
+              >
+                <AiOutlineMinus fill="#ED3237"/>
+              </button>
+              <input type="number" readOnly value={extraItemQuantity} />
+              <button 
+                className="itemQuantity__btn" 
+                type="button" 
+                onClick={() => handleIncrementItem}
+              >
+                <AiOutlinePlus fill="#ED3237"/>
+              </button> */}
+            </div>
           </div>
           <div className="yellow-line"/>
           <div className="retangle">
@@ -136,9 +193,9 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             <h3>Oferta cheddar bacon</h3>
             <span>Ingredientes</span>
             <ul>
-              <li>1 Carne 250gr</li>
-              <li>2 Queijo cheddar</li>
-              <li>1 Bacon</li>
+              <li>{extraItemQuantity} Carne 250gr</li>
+              <li>{extraItemQuantity} Queijo cheddar</li>
+              <li>{extraItemQuantity} Bacon</li>
               <li>Molho especial</li>
             </ul>
           </div>

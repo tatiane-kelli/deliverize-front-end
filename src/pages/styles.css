@@ -83,6 +83,9 @@
   height: 88px;
   bottom: 1.12%;
 
+  display: flex;
+  align-items: center;
+
   background: #ffffff;
 }
 
@@ -111,8 +114,20 @@
 .container .additional__orders .extra__ingredient .extraItem__btn {
   width: 89px;
   height: 32px;
+  display: flex;
+  justify-content: space-evenly;
+
+  background: #ffffff;
+
+  border: 1px solid #f09035;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.container .additional__orders .quantity__extraItem {
+  width: 89px;
+  height: 32px;
   right: 8px;
-  top: calc(50% - 32px / 2 - 1.5px);
 
   background: #ffffff;
 
@@ -153,18 +168,6 @@
 
   background: #ffffff;
   color: #ed3237;
-}
-
-.container .additional__orders .quantity__extraItem {
-  width: 89px;
-  height: 32px;
-  right: 8px;
-
-  background: #ffffff;
-
-  border: 1px solid #f09035;
-  box-sizing: border-box;
-  border-radius: 5px;
 }
 
 .container .additional__orders .yellow-line {
