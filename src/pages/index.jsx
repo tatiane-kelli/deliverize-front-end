@@ -1,5 +1,6 @@
 import React, {useState, useCallback} from "react";
 import Header from "../components/header";
+import InputQuantity from "../components/inputQuantity";
 import {AiOutlineMinus, AiOutlinePlus} from "react-icons/ai";
 import ImgSandwich from "../assets/PicanhaBacon.svg";
 import "./styles.css";
@@ -71,47 +72,21 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="extra__item">Queijo cheddar</p>
               <p className="price">+R$4,99</p>
             </div>
-            <div className="extraItem_btn">
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleDecrementItem}
-              >
-                <AiOutlineMinus fill="#ED3237"/>
-              </button>
-              <input type="number" readOnly value={extraItemQuantity} />
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleIncrementItem}
-              >
-                <AiOutlinePlus fill="#ED3237"/>
-              </button>
-            </div>
+            <InputQuantity 
+              handleIncrementItem={handleIncrementItem}
+              handleDecrementItem={handleDecrementItem}
+            />
           </div>
           <div className="yellow-line"/>
           <div className="extra__ingredient">
             <div>
               <p className="extra__item">Cebola crispy</p>
               <p className="price">+R$1,50</p>
-            </div>
-            <div className="extraItem_btn">
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleDecrementItem}
-              >
-                <AiOutlineMinus fill="#ED3237"/>
-              </button>
-              <input type="number" readOnly value={extraItemQuantity} />
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleIncrementItem}
-              >
-                <AiOutlinePlus fill="#ED3237"/>
-              </button>
-            </div>
+            </div>   
+            <InputQuantity 
+              handleIncrementItem={handleIncrementItem}
+              handleDecrementItem={handleDecrementItem}
+            />
           </div>
           <div className="yellow-line"/>
           <div className="extra__ingredient">
@@ -119,23 +94,10 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="extra__item">Molho cheddar</p>
               <p className="price">+R$3,50</p>
             </div>
-            <div className="extraItem_btn">
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleDecrementItem}
-              >
-                <AiOutlineMinus fill="#ED3237"/>
-              </button>
-              <input type="number" readOnly value={extraItemQuantity} />
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleIncrementItem}
-              >
-                <AiOutlinePlus fill="#ED3237"/>
-              </button>
-            </div>
+            <InputQuantity 
+              handleIncrementItem={handleIncrementItem}
+              handleDecrementItem={handleDecrementItem}
+            />
           </div>
           <div className="yellow-line"/>
           <div className="extra__ingredient">
@@ -143,23 +105,10 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="extra__item">Molho de picanha</p>
               <p className="price">+R$3,50</p>
             </div>
-            <div className="extraItem_btn">
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleDecrementItem}
-              >
-                <AiOutlineMinus fill="#ED3237"/>
-              </button>
-              <input type="number" readOnly value={extraItemQuantity} />
-              <button 
-                className="itemQuantity__btn" 
-                type="button" 
-                onClick={() => handleIncrementItem}
-              >
-                <AiOutlinePlus fill="#ED3237"/>
-              </button>
-            </div>
+            <InputQuantity 
+              handleIncrementItem={handleIncrementItem}
+              handleDecrementItem={handleDecrementItem}
+            />
           </div>
           <div className="yellow-line"/>
           <div className="retangle">
@@ -193,7 +142,6 @@ const Product = ({food_quantity, extraItem_quantity}) => {
                 Adicionar
               </button>
             </div>
-            
           </div>
         </div>
       { showPopover && 

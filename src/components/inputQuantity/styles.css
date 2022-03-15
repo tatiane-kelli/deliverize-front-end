@@ -1,0 +1,46 @@
+.extraItem__btn {
+  width: 89px;
+  height: 32px;
+  display: flex;
+  justify-content: space-evenly;
+
+  background: #ffffff;
+
+  border: 1px solid #f09035;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.extraItem__btn input {
+  width: 10px;
+  height: 32px;
+  background-color: #ffffff;
+  border-style: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #4e4e4e;
+}
+
+.extraItem__btn input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.extraItem__btn .itemQuantity__btn {
+  width: 31.7px;
+  height: 30px;
+
+  border-style: none;
+
+  background: #ffffff;
+  color: #ed3237;
+}
