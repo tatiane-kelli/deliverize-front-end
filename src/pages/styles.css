@@ -32,7 +32,7 @@
 
 .container .additional__orders {
   width: 380px;
-  height: 630px;
+  height: 580px;
   top: 24px;
   margin: 24px 0px 24px 0px;
   padding: 20px;
@@ -124,10 +124,11 @@
   border-radius: 5px;
 }
 
-.container .additional__orders .quantity__extraItem {
+.container .additional__orders .extraItem__btn {
   width: 89px;
   height: 32px;
   right: 8px;
+  top: calc(50% - 32px / 2 - 1.5px);
 
   background: #ffffff;
 
@@ -137,8 +138,8 @@
 }
 
 .container .additional__orders .extra__ingredient .extraItem__btn input {
-  width: 31.7px;
-  height: 30px;
+  width: 10px;
+  height: 32px;
   background-color: #ffffff;
   border: none;
 

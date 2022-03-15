@@ -7,6 +7,8 @@ import "./styles.css";
 const Product = ({food_quantity, extraItem_quantity}) => {
   const [extraItemQuantity, setExtraItemQuantity] = useState(extraItem_quantity);
   const [foodQuantity, setFoodQuantity] = useState(food_quantity);
+  const [addFoodToCart, setAddFoodToCard] = useState(false);
+  const [showPopover, setShowPopover] = useState(false);
 
   const handleIncrementItem = useCallback(() => {
     setExtraItemQuantity(extraItemQuantity + 1);
@@ -23,6 +25,11 @@ const Product = ({food_quantity, extraItem_quantity}) => {
   const handleDecrement = useCallback(() => {
     setFoodQuantity(foodQuantity - 1);
   }, [setFoodQuantity, foodQuantity]);
+
+  const handleAddFood = useCallback(() => {
+    setAddFoodToCard(addFoodToCart * foodQuantity);
+    setShowPopover(true);
+  }, [setAddFoodToCard, addFoodToCart, foodQuantity, setShowPopover ])
 
   return (
     <>
@@ -65,7 +72,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="price">+R$4,99</p>
             </div>
             <div className="extraItem_btn">
-              {/* <button 
+              <button 
                 className="itemQuantity__btn" 
                 type="button" 
                 onClick={() => handleDecrementItem}
@@ -79,7 +86,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
                 onClick={() => handleIncrementItem}
               >
                 <AiOutlinePlus fill="#ED3237"/>
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="yellow-line"/>
@@ -89,7 +96,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="price">+R$1,50</p>
             </div>
             <div className="extraItem_btn">
-              {/* <button 
+              <button 
                 className="itemQuantity__btn" 
                 type="button" 
                 onClick={() => handleDecrementItem}
@@ -103,7 +110,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
                 onClick={() => handleIncrementItem}
               >
                 <AiOutlinePlus fill="#ED3237"/>
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="yellow-line"/>
@@ -113,7 +120,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="price">+R$3,50</p>
             </div>
             <div className="extraItem_btn">
-              {/* <button 
+              <button 
                 className="itemQuantity__btn" 
                 type="button" 
                 onClick={() => handleDecrementItem}
@@ -127,7 +134,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
                 onClick={() => handleIncrementItem}
               >
                 <AiOutlinePlus fill="#ED3237"/>
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="yellow-line"/>
@@ -137,7 +144,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               <p className="price">+R$3,50</p>
             </div>
             <div className="extraItem_btn">
-              {/* <button 
+              <button 
                 className="itemQuantity__btn" 
                 type="button" 
                 onClick={() => handleDecrementItem}
@@ -151,7 +158,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
                 onClick={() => handleIncrementItem}
               >
                 <AiOutlinePlus fill="#ED3237"/>
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="yellow-line"/>
@@ -179,12 +186,17 @@ const Product = ({food_quantity, extraItem_quantity}) => {
               </button>
             </div>
             <div className="add__food">
-              <button className="btn__addFood">Adicionar</button>
+              <button 
+                className="btn__addFood"
+                onClick={() => handleAddFood}
+              >
+                Adicionar
+              </button>
             </div>
             
           </div>
         </div>
-
+      { showPopover && 
         <div className="popover" id="popover">
           <div className="popover__title">
             <span>Adicionado com Sucesso</span>
@@ -200,6 +212,7 @@ const Product = ({food_quantity, extraItem_quantity}) => {
             </ul>
           </div>
         </div>
+      }  
       </div>
     </>
   );
