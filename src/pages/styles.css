@@ -186,6 +186,7 @@
 .popover {
   width: 208px;
   height: 146px;
+  position: relative;
 
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
